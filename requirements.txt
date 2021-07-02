@@ -1,0 +1,16 @@
+# DO NOT include azure-functions-worker in this file
+# The Python Worker is managed by Azure Functions platform
+# Manually managing azure-functions-worker may cause unexpected issues
+
+azure-functions
+azure-kusto-ingest==2.1.1
+azure-kusto-data==2.1.1
+pandas
+azure-storage-blob
+requests
+azure-mgmt-datafactory
+azure-identity
+urllib3
+faker
+azure-cosmos
+azure-eventhub

@@ -1,0 +1,24 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "type": "eventHubTrigger",
+      "name": "events",
+      "direction": "in",
+      "eventHubName": "%eventGridEventHubName%",
+      "connection": "eventGridEventHub_RootManageSharedAccessKey",
+      "cardinality": "many",
+      "consumerGroup": "$Default",
+      "dataType": "binary"
+    },
+    {
+      "name": "cosmosdb",
+      "type": "cosmosDB",
+      "direction": "out",
+      "databaseName": "%cosmosDocumentdbName%",
+      "collectionName": "%CosmosDocumentdbCollectionName%",
+      "createIfNotExists": "true",
+      "connectionStringSetting": "AzureCosmosDocumentDBConnectionString"
+    }
+  ]
+}
