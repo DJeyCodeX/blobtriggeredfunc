@@ -34,5 +34,5 @@ jobs:
       with:
         app-name: batchfuncdoc
         slot-name: Production
-        publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A58535E86CA64971A0D77A9798C568D4 }}
+        publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_060C2C0DA06E4964AF3237FBD5D4F827 }}
 
